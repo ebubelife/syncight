@@ -9,10 +9,10 @@ function App() {
   return (
     <>
     <Menu />
-    <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
-    <div className="p-20 sm:pl-1 sm:pr-1 sm:w-96 lg:ml-20  sm:pt-2">
-      <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
-      <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
+    <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-20 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
+    <div className="p-20 sm:pl-1 sm:pr-1 sm:screen lg:ml-20  sm:pt-2">
+      <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text-4xl text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
+      <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal sm:text-2xl text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
       <div className='w-screen sm: pl-20 lg:pl-5 '>
       <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
@@ -20,7 +20,7 @@ function App() {
       </div>
     </div>
    
-    <div className="lg:pt-20 ">
+    <div className="lg:pt-20  lg:pl-20">
     
     <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-96 mt-20 ml-10 h-2/3  sm:h-96"/>
       
