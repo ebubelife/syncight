@@ -9,20 +9,20 @@ function App() {
   return (
     <>
     <Menu />
-    <section className="top-hero-section h-full w-full  grid grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
-    <div className="p-20 sm:pl-1 sm:pr-1 sm:w-96  sm:pt-2">
-      <h1 className=" sm:w-full sm:ml-4 sm:text-center font-bold text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
-      <p className="sm:text-center sm:ml-5   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
+    <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
+    <div className="p-20 sm:pl-1 sm:pr-1 sm:w-96 lg:ml-20  sm:pt-2">
+      <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
+      <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
-      <div className='w-screen pl-20'>
+      <div className='w-screen sm: pl-20 lg:pl-5 '>
       <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
       <button type="button" className="btn btn-outline-dark mt-3 ml-3">API Docs</button>
       </div>
     </div>
    
-    <div className="">
+    <div className="lg:pt-20 ">
     
-    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-96 mt-20 ml-10 h-2/3 sm:h-96"/>
+    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-96 mt-20 ml-10 h-2/3  sm:h-96"/>
       
     </div>
   </section>
@@ -34,39 +34,33 @@ function Menu(){
 
   return(
     <>
-   
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-  <div class="container flex flex-wrap items-center justify-between mx-auto">
-    <a href="https://flowbite.com/" class="flex items-center">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    <nav class="sm:pr-3 sm:pl-3   flex items-center justify-between flex-wrap bg-stone-800 pt-2 pb-2 pr-20 pl-20">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+   <img src={main_logo} className="logo w-50 h-10" alt="logo" />
+    <span class="font-semibold text-xl tracking-tight">Syncight</span>
+  </div>
+  <div class="block lg:hidden">
+    <button class="flex items-center px-3 pb-5 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
+  </div>
+  <div class="w-full block flex-grow lg:flex lg:items-center ml-64 lg:w-auto">
+    <div class="text-sm lg:flex-grow">
+      <a href="#responsive-header" class="no-underline text-lg block mt-2 lg:inline-block lg:mt-0 text-yellow-300 hover:text-white mr-10">
+        Products
+      </a>
+      <a href="#responsive-header" class="no-underline text-lg block mt-2 lg:inline-block lg:mt-0 text-yellow-300 hover:text-white  mr-10">
+        Samples
+      </a>
+      <a href="#responsive-header" class=" no-underline  text-lg block mt-2 lg:inline-block lg:mt-0 text-yellow-300 hover:text-white ">
+        News
+      </a>
+    </div>
+    <div>
+      <a href="#" class="inline-block text-sm px-4 py-2 no-underline leading-none border rounded text-yellow-100  border-white hover:border-transparent hover:text-red-300 hover:bg-white mt-2 lg:mt-0">Signup</a>
     </div>
   </div>
 </nav>
-
     </>
   )
 
