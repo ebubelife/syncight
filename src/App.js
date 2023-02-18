@@ -36,12 +36,12 @@ function Menu(){
   return(
     <>
 
-    <nav className="w-full bg-stone-800  shadow-6xl">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className="w-full border-b-2 border-slate-200 shadow-slate-400 shadow-6xl lg:pl-20 lg:pr-20">
+        <div className="justify-between shadow-6xl shadow-6xl shadow-slate-400 px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
             <div>
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <a href="javascript:void(0)">
-                        <h2 className="no-underline text-2xl  font-bold text-white">Syncight</h2>
+                        <h2 className="no-underline text-3xl  font-bold text-black">Syncight</h2>
                     </a>
                     <div className="md:hidden">
                         <button
@@ -51,7 +51,7 @@ function Menu(){
                             {navbar ? (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="w-6 h-6 text-white"
+                                    className="w-6 h-6 text-slate-500"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
                                 >
@@ -67,7 +67,7 @@ function Menu(){
                                     className="w-6 h-6 text-white"
                                     fill="none"
                                     viewBox="0 0 24 24"
-                                    stroke="currentColor"
+                                    stroke="#000000"
                                     strokeWidth={2}
                                 >
                                     <path
@@ -89,16 +89,16 @@ function Menu(){
                 >
                     <ul className="items-center pt-4  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                         <li className="no-underline text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-white'  >Products</a>
+                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-2xl'  >Products</a>
                         </li>
                         <li className="text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-white'>Samples</a>
+                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-2xl  '>Samples</a>
                         </li>
                         <li className="text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-white'>API Docs</a>
+                            <a href="javascript:void(0)" className='no-underline  text-slate-500 text-2xl '>API Docs</a>
                         </li>
                         <li className="text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-white'>Blogs </a>
+                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-2xl '>Blogs </a>
                         </li>
                     </ul>
 
