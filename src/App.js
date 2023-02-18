@@ -2,13 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import {Image} from 'react';
+import { useState } from "react";
 import main_logo from './assets/Xnapper-2023-02-17-21.55.32-removebg-preview__1_-removebg-preview.png'
 import right_hero_image from './assets/63d9a1076838235da1173121_Light-p-800.png'
 
 function App() {
   return (
     <>
-   
+    <Menu />
     <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
     <div className=" sm:pl-1  lg:mr-20 lg:ml-20  sm:pt-2">
       <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text-justify text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
@@ -31,36 +32,108 @@ function App() {
 }
 
 function Menu(){
-
+  const [navbar, setNavbar] = useState(false);
   return(
     <>
-    <nav class="sm:pr-3 sm:pl-3   flex items-center justify-between flex-wrap bg-stone-800 pt-2 pb-2 pr-20 pl-20">
-  <div class="flex items-center flex-shrink-0 text-white mr-6">
-   <img src={main_logo} className="logo w-50 h-10" alt="logo" />
-    <span class="font-semibold text-xl tracking-tight">Syncight</span>
-  </div>
-  <div class="block lg:hidden">
-    <button class="flex items-center px-3 pb-5 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
-  </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center ml-64 lg:w-auto">
-    <div class="text-sm lg:flex-grow">
-      <a href="#responsive-header" class="no-underline text-lg block mt-2 lg:inline-block lg:mt-0 text-yellow-300 hover:text-white mr-10">
-        Products
-      </a>
-      <a href="#responsive-header" class="no-underline text-lg block mt-2 lg:inline-block lg:mt-0 text-yellow-300 hover:text-white  mr-10">
-        Samples
-      </a>
-      <a href="#responsive-header" class=" no-underline  text-lg block mt-2 lg:inline-block lg:mt-0 text-yellow-300 hover:text-white ">
-        News
-      </a>
-    </div>
-    <div>
-      <a href="#" class="inline-block text-sm px-4 py-2 no-underline leading-none border rounded text-yellow-100  border-white hover:border-transparent hover:text-red-300 hover:bg-white mt-2 lg:mt-0">Signup</a>
-    </div>
-  </div>
-</nav>
+
+    <nav className="w-full bg-stone-800  shadow-6xl">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div>
+                <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <a href="javascript:void(0)">
+                        <h2 className="no-underline text-2xl  font-bold text-white">Syncight</h2>
+                    </a>
+                    <div className="md:hidden">
+                        <button
+                            className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                            onClick={() => setNavbar(!navbar)}
+                        >
+                            {navbar ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6 text-white"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clipRule="evenodd"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6 text-white"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth={2}
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    />
+                                </svg>
+                            )}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div
+                    className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                        navbar ? "block" : "hidden"
+                    }`}
+                >
+                    <ul className="items-center pt-4  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <li className="no-underline text-white hover:text-indigo-200">
+                            <a href="javascript:void(0)" className='no-underline text-white'  >Products</a>
+                        </li>
+                        <li className="text-white hover:text-indigo-200">
+                            <a href="javascript:void(0)" className='no-underline text-white'>Samples</a>
+                        </li>
+                        <li className="text-white hover:text-indigo-200">
+                            <a href="javascript:void(0)" className='no-underline text-white'>API Docs</a>
+                        </li>
+                        <li className="text-white hover:text-indigo-200">
+                            <a href="javascript:void(0)" className='no-underline text-white'>Blogs </a>
+                        </li>
+                    </ul>
+
+                    <div className="mt-3 space-y-2 no-underline lg:hidden md:inline-block">
+                <a
+                    href="javascript:void(0)"
+                    className="inline-block no-underline w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+                >
+                    Sign in
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="inline-block no-underline w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+                >
+                    Sign up
+                </a>
+            </div>
+                </div>
+            </div>
+            <div className="hidden space-x-2 md:inline-block">
+                <a
+                    href="javascript:void(0)"
+                    className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+                >
+                    Sign in
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+                >
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </nav>
     </>
   )
 
