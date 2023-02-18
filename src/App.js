@@ -8,7 +8,7 @@ import right_hero_image from './assets/63d9a1076838235da1173121_Light-p-800.png'
 function App() {
   return (
     <>
-    <Menu />
+  
     <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-20 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
     <div className="p-20 sm:pl-1 sm:pr-1 sm:screen lg:ml-20  sm:pt-2">
       <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text-4xl text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
