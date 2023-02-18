@@ -20,9 +20,9 @@ function App() {
       </div>
     </div>
    
-    <div className="lg:pt-20  lg:pl-20">
+    <div className="lg:pt-20  lg:pl-20 ">
     
-    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-96 mt-20 ml-10 h-2/3  sm:h-96"/>
+    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-96 lg:mt-20 lg:ml-10 h-2/3  sm:h-96"/>
       
     </div>
   </section>
