@@ -14,7 +14,7 @@ function App() {
       <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text-4xl text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
       <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal sm:text-2xl text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
-      <div className='w-screen bg-stone-800  sm: pl-20 lg:pl-5 '>
+      <div className='w-48 bg-stone-800  sm: pl-20 lg:pl-5 '>
       <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
       <button type="button" className="btn btn-outline-dark mt-3 ml-3">API Docs</button>
       </div>
