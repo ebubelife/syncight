@@ -8,23 +8,21 @@ import right_hero_image from './assets/63d9a1076838235da1173121_Light-p-800.png'
 function App() {
   return (
     <>
-    
+   
     <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
-    <div className="lg:p-20 sm:p-10 sm:w-screen lg:ml-20  sm:pt-2">
-      <h1 className=" lg:text-justify sm:ml-4 sm:text-center font-bold sm:text- text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
-      <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
+    <div className=" sm:pl-1  lg:mr-20 lg:ml-20  sm:pt-2">
+      <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text-justify text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
+      <p className="sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
-      <div className='w-screen sm:flex sm:grid sm:place-content-center  lg:pl-5'>
-        <div className='inner-btn-wrapper sm:grid sm:place-content-center   sm:w-96'>
-      <button type="button" className=" btn btn-outline-dark mt-3 flex">Get Started</button>
-      <button type="button" className="btn btn-outline-dark mt-3 ml-3 flex ">API Docs</button>
-      </div>
+      <div className='w-full sm:pl-20 lg:pl-5 '>
+      <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
+      <button type="button" className="btn btn-outline-dark mt-3 ml-3">API Docs</button>
       </div>
     </div>
    
-    <div className="lg:pt-20 sm:pl-5 sm:pr-5 ">
+    <div className="lg:pt-20 sm:w-full">
     
-    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-full mt-20  h-2/3  sm:h-full"/>
+    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-6xl  sm:mt-1  mt-20 h-2/3  sm:h-2/3 lg:w-2/3"/>
       
     </div>
   </section>
