@@ -11,7 +11,7 @@ function App() {
     <>
     <Menu />
     <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
-    <div className=" sm:pl-1  lg:mr-20 lg:ml-20  sm:pt-2">
+    <div className=" sm:pl-1  lg:mr-20 lg:ml-20  sm:pt-2 sm:pl-3 sm:pr-3">
       <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text-justify text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
       <p className="sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
@@ -89,16 +89,16 @@ function Menu(){
                 >
                     <ul className="items-center pt-4  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                         <li className="no-underline text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-2xl'  >Products</a>
+                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-xl'  >Products</a>
                         </li>
                         <li className="text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-2xl  '>Samples</a>
+                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-xl  '>Samples</a>
                         </li>
                         <li className="text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline  text-slate-500 text-2xl '>API Docs</a>
+                            <a href="javascript:void(0)" className='no-underline  text-slate-500 text-xl '>API Docs</a>
                         </li>
                         <li className="text-white hover:text-indigo-200">
-                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-2xl '>Blogs </a>
+                            <a href="javascript:void(0)" className='no-underline text-slate-500 text-xl '>Blogs </a>
                         </li>
                     </ul>
 
