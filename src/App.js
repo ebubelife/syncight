@@ -8,21 +8,23 @@ import right_hero_image from './assets/63d9a1076838235da1173121_Light-p-800.png'
 function App() {
   return (
     <>
-  
-    <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-20 sm:gap-0 bg-gradient-to-t from-stone-200 to-white sm:pl-5 sm:pr-5">
-    <div className="lg:p-20 sm:p-5 sm:pl-1 sm:pr-1 sm:h-full lg:ml-20  sm:pt-2">
-      <h1 className=" lg:text-justify sm:ml-42 sm:text-center font-bold sm:text-4xl text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
-      <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal sm:text-2xl text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
+    
+    <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
+    <div className="p-20 sm:pl-1 sm:pr-1 sm:w-full lg:ml-20  sm:pt-2">
+      <h1 className=" sm:w-full lg:text-justify sm:ml-4 sm:text-center font-bold sm:text- text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
+      <p className="sm:text-center sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
-      <div className='w-48 bg-stone-800  sm: pl-20 lg:pl-5 '>
-      <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
-      <button type="button" className="btn btn-outline-dark mt-3 ml-3">API Docs</button>
+      <div className='w-screen sm:flex sm:grid sm:place-content-center  lg:pl-5'>
+        <div className='inner-btn-wrapper sm:grid sm:place-content-center   sm:w-96'>
+      <button type="button" className=" btn btn-outline-dark mt-3 flex">Get Started</button>
+      <button type="button" className="btn btn-outline-dark mt-3 ml-3 flex ">API Docs</button>
+      </div>
       </div>
     </div>
    
-    <div className="lg:pt-20    lg:pl-20 ">
+    <div className="lg:pt-20 sm:pl-5 sm:pr-5 ">
     
-    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-32 lg:mt-20 lg:ml-10 h-2/3  sm:h-96"/>
+    <img src={right_hero_image} alt="right_hero_image" className="right-hero-image shadow-2xl sm:ml-5 sm:mt-1  sm:w-full mt-20  h-2/3  sm:h-full"/>
       
     </div>
   </section>
