@@ -12,7 +12,7 @@ function App() {
     <Menu />
     <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
     <div className=" sm:pl-1  lg:mr-20 lg:ml-20  sm:pt-2 sm:px-48">
-      <h1 className="sm:ml-5  lg:text-justify sm:ml-4  font-bold sm:text-justify text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
+      <h1 className="sm:ml-5  lg:text-justify sm:ml-4  font-bold text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
       <p className="sm:ml-5 lg:text-justify   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
       <div className='w-full sm:pl-20 lg:pl-5 '>
