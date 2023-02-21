@@ -11,11 +11,11 @@ function App() {
     <>
     <Menu />
     <section className="top-hero-section lg:h-screen lg:w-full  lg:grid lg:grid-cols-2 sm:no-grid  sm:grid-cols-1 gap-6 sm:gap-0 bg-gradient-to-t from-stone-200 to-white">
-    <div className=" sm:pl-1 lg:w-full lg:mr-20 lg:ml-20  sm:pt-2 sm:px-48">
+    <div className=" sm:pl-1 lg:w-full lg:mr-20 lg:ml-20 sm:ml-10 sm:pt-2 sm:px-48">
       <h1 className="sm:ml-5  lg:text-justify sm:ml-4  font-bold  text-4xl mt-20 text-yellow-600 ">We summarise stuff</h1>
       <p className="sm:ml-5 lg:text-justify lg:w-full   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
-      <div className='w-full sm:pl-20 lg:pl-5 '>
+      <div className='w-full sm:pl-20 lg:pl-5'>
       <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
       <button type="button" className="btn btn-outline-dark mt-3 ml-3">API Docs</button>
       </div>
