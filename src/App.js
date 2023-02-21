@@ -16,7 +16,7 @@ function App() {
       <p className="sm:ml-5 lg:text-justify lg:w-full   font-normal text-xl mt-3 text-stone-500">We create summaries from youtube videos, texts, books and audio files. with few clicks, you can get summaries in varying formats. Extract points, quotes or gain insights. {'\n'} Click the button below to get started with free credits.</p>
 
       <div className='w-full sm:pl-20 lg:pl-5'>
-      <button type="button" className=" btn btn-outline-dark mt-3">Get Started</button>
+      <button type="button" className=" btn btn-outline-dark mt-3">Get Starte</button>
       <button type="button" className="btn btn-outline-dark mt-3 ml-3">API Docs</button>
       </div>
     </div>
