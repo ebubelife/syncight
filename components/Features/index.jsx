@@ -11,7 +11,7 @@ const Features = () => {
       >
         <div className="container">
           <SectionTitle
-            title="We can..."
+            title="We Can Do..."
            // paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
             center
           />
